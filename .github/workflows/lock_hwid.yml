@@ -1,0 +1,77 @@
+name: Auto Lock HWID
+
+on:
+  workflow_dispatch:
+    inputs:
+      key:
+        description: 'Chave de Ativacao'
+        required: true
+      hwid:
+        description: 'HWID do Computador'
+        required: true
+  repository_dispatch:
+    types: [lock_hwid]
+
+jobs:
+  update-key:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout Repositorio
+        uses: actions/checkout@v4
+
+      - name: Atualizar keys.txt com HWID
+        run: |
+          KEY="${{ github.event.inputs.key || github.event.client_payload.key }}"
+          HWID="${{ github.event.inputs.hwid || github.event.client_payload.hwid }}"
+          
+          if [ -z "$KEY" ] || [ -z "$HWID" ]; then
+            echo "Chave ou HWID vazios."
+            exit 1
+          fi
+
+          echo "Processando vinculacao para Chave: $KEY com HWID: $HWID"
+          
+          if [ -f "keys.txt" ]; then
+            python3 -c "
+          key = '$KEY'.strip()
+          hwid = '$HWID'.strip()
+          
+          lines = open('keys.txt', 'r').readlines()
+          new_lines = []
+          found = False
+          
+          for line in lines:
+              stripped = line.strip()
+              if not stripped:
+                  new_lines.append(line)
+                  continue
+              
+              parts = stripped.split(':')
+              k = parts[0]
+              
+              if k == key:
+                  found = True
+                  if len(parts) > 1 and parts[1]:
+                      new_lines.append(line)
+                  else:
+                      new_lines.append(f'{k}:{hwid}\n')
+              else:
+                  new_lines.append(line)
+                  
+          if found:
+              with open('keys.txt', 'w') as f:
+                  f.writelines(new_lines)
+              print('Chave travada com sucesso!')
+          else:
+              print('Chave nao encontrada no keys.txt')
+          "
+          fi
+
+      - name: Salvar alteracao no GitHub
+        run: |
+          git config --global user.name "DiscordUnlock Bot"
+          git config --global user.email "bot@discordunlock.local"
+          git add keys.txt
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto Lock HWID: ${{ github.event.inputs.key || github.event.client_payload.key }}" && git push)
