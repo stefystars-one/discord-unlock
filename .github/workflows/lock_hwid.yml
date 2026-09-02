@@ -1,4 +1,4 @@
-name: Auto Lock HWID
+﻿name: Auto Lock HWID
 
 on:
   workflow_dispatch:
@@ -53,10 +53,14 @@ jobs:
               
               if k == key:
                   found = True
-                  if len(parts) > 1 and parts[1]:
+                  if len(parts) >= 2 and parts[1]:
                       new_lines.append(line)
                   else:
-                      new_lines.append(f'{k}:{hwid}\n')
+                      exp = parts[2] if len(parts) >= 3 else ''
+                      if exp:
+                          new_lines.append(f'{k}:{hwid}:{exp}\n')
+                      else:
+                          new_lines.append(f'{k}:{hwid}\n')
               else:
                   new_lines.append(line)
                   
