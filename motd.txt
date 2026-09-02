@@ -1,3 +1,2 @@
 ﻿Bem-vindo ao Discord Unlock v1.4!
-- Novidades: Notificacoes Globais, Bandeja do Sistema e Auto-Reconexao! 
-Aperte M para minimizar
+- Novidades: Trava Automatica de HWID, Notificacoes Globais, Bandeja do Sistema e Auto-Reconexao silenciosa!
