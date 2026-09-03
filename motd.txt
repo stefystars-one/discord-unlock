@@ -1,2 +1,12 @@
 ﻿Bem-vindo ao Discord Unlock 2.2!
-- Novidades: Acentuacao e traducao 100% em Portugues, temas fixados no codigo, auto-atualizacao automatica no boot e protecao de rotas gamer!
+
+🛠️ Correções e melhorias
+
+- Corrigido o sistema de atualizações que estava travado.
+- Corrigido o painel de temas.
+- Melhorias nas traduções.
+- Melhorias de desempenho e estabilidade.
+
+⚠️ Avisos: Algumas funções ainda estão em fase Beta e podem não funcionar conforme o esperado.
+
+Caso você esteja utilizando a versão 2.1 ou anterior e não consiga realizar a atualização automática, entre em contato com o desenvolvedor para obter assistência.
