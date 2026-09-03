@@ -16,7 +16,7 @@ Caso você esteja utilizando a versão 2.1 ou anterior e não consiga realizar a
 
 bugs da versao atual reportados: temas animados em baixa resolução/quebrados
 
-ips off-line/lentos 
-
+-ips off-line/lentos 
+- overlay aplicando fundo em apps (paliativo desligue o overlay do discord) 
 
 data prevista para próxima atualização de correção de bugs 04/09/2026 as 14:00pm
