@@ -1,2 +1,2 @@
-Bem-vindo ao Discord Unlock 2.0!
+﻿Bem-vindo ao Discord Unlock 2.0!
 - Novidades: Voice Changer em tempo real, Soundboard Gamer com atalhos, Streaming 1440p 60fps desbloqueado, Galeria de Temas Full Immersion com suporte a temas proprios, Catalogo de Plugins em Portugues e Rotas SOCKS5 anti-queda!
