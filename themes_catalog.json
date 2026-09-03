@@ -1,0 +1,58 @@
+[
+  {
+    "id": "dark_forest",
+    "name": "The Dark Forest (Místico)",
+    "desc": "Floresta escura mística e atmosfera nórdica com alta imersão.",
+    "img": "https://images.steamusercontent.com/ugc/12668128479810320595/1C9153D8D9466391E0EC0D0C9AFAC3A3A1E0E6D7/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
+    "badge": "🌌 TEMA IMERSIVO",
+    "accent": "#22c55e"
+  },
+  {
+    "id": "in_the_beginning",
+    "name": "In the Beginning (Cósmico)",
+    "desc": "Espaço sideral profundo, nebulosa estelar e constelações brilhantes.",
+    "img": "https://images.steamusercontent.com/ugc/2475370109689297967/EC9C53EA05064CE5C6634CA2626985105B496867/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
+    "badge": "🌌 TEMA IMERSIVO",
+    "accent": "#818cf8"
+  },
+  {
+    "id": "frosted_sapphire",
+    "name": "Frosted Sapphire Neon",
+    "desc": "Azul safira translúcido e efeito vidro fosco moderno para máxima imersão.",
+    "img": "",
+    "bg": "#062544",
+    "accent": "#38bdf8"
+  },
+  {
+    "id": "cyberpunk_neon",
+    "name": "Cyberpunk 2077 Neon",
+    "desc": "Estética gamer cyberpunk com vermelho neon, ciano elétrico e alto contraste.",
+    "img": "",
+    "bg": "#1c030d",
+    "accent": "#ff007f"
+  },
+  {
+    "id": "sunset_vaporwave",
+    "name": "Sunset Vaporwave",
+    "desc": "Pôr do sol synthwave com degradê roxo e acentos dourados brilhantes.",
+    "img": "",
+    "bg": "#20062b",
+    "accent": "#f59e0b"
+  },
+  {
+    "id": "midnight_amethyst",
+    "name": "Midnight Amethyst",
+    "desc": "Roxo ametista profundo e elegante com efeito fosco para uso noturno.",
+    "img": "",
+    "bg": "#150426",
+    "accent": "#a855f7"
+  },
+  {
+    "id": "amoled_black",
+    "name": "AMOLED Pure Black",
+    "desc": "Preto absoluto para telas OLED, descanso visual e zero reflexo.",
+    "img": "",
+    "bg": "#000000",
+    "accent": "#6366f1"
+  }
+]
