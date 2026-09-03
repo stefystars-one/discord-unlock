@@ -10,3 +10,5 @@
 ⚠️ Avisos: Algumas funções ainda estão em fase Beta e podem não funcionar conforme o esperado.
 
 Caso você esteja utilizando a versão 2.1 ou anterior e não consiga realizar a atualização automática, entre em contato com o desenvolvedor para obter assistência.
+
+bugs da versao atual reportados: temas animados em baixa resolução/quebrados
