@@ -1,35 +1,19 @@
 [
   {
     "id": "dark_forest",
-    "name": "The Dark Forest (Wallpaper Engine)",
-    "desc": "Floresta escura mística e atmosfera nórdica com alta imersão oficial do Wallpaper Engine.",
+    "name": "The Dark Forest (Místico)",
+    "desc": "Floresta escura mística e atmosfera nórdica com alta imersão.",
     "img": "https://images.steamusercontent.com/ugc/12668128479810320595/1C9153D8D9466391E0EC0D0C9AFAC3A3A1E0E6D7/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
-    "badge": "🌌 WALLPAPER ENGINE",
+    "badge": "🌌 TEMA IMERSIVO",
     "accent": "#22c55e"
   },
   {
     "id": "in_the_beginning",
-    "name": "In the Beginning (Wallpaper Engine)",
-    "desc": "Espaço sideral profundo, nebulosa estelar e constelações brilhantes do Wallpaper Engine.",
+    "name": "In the Beginning (Cósmico)",
+    "desc": "Espaço sideral profundo, nebulosa estelar e constelações brilhantes.",
     "img": "https://images.steamusercontent.com/ugc/2475370109689297967/EC9C53EA05064CE5C6634CA2626985105B496867/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
-    "badge": "🌌 WALLPAPER ENGINE",
+    "badge": "🌌 TEMA IMERSIVO",
     "accent": "#818cf8"
-  },
-  {
-    "id": "anime_lofi",
-    "name": "Anime Lo-Fi Rain (Animado)",
-    "desc": "Chuva suave em quarto estilo anime com iluminação roxa aconchegante.",
-    "img": "https://media.tenor.com/7p_R-O1gqPMAAAAC/lofi-rain.gif",
-    "badge": "✨ ANIMADO",
-    "accent": "#c084fc"
-  },
-  {
-    "id": "matrix_rain",
-    "name": "Matrix Cyber Rain (Animado)",
-    "desc": "Chuva de código verde digital terminal hacker com visual cyberpunk.",
-    "img": "https://media.tenor.com/GfSX-u7V6LMAAAAC/matrix-code.gif",
-    "badge": "✨ ANIMADO",
-    "accent": "#10b981"
   },
   {
     "id": "frosted_sapphire",
