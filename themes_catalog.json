@@ -1,58 +1,106 @@
-[
-  {
-    "id": "dark_forest",
-    "name": "The Dark Forest (Místico)",
-    "desc": "Floresta escura mística e atmosfera nórdica com alta imersão.",
-    "img": "https://images.steamusercontent.com/ugc/12668128479810320595/1C9153D8D9466391E0EC0D0C9AFAC3A3A1E0E6D7/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
-    "badge": "🌌 TEMA IMERSIVO",
-    "accent": "#22c55e"
-  },
-  {
-    "id": "in_the_beginning",
-    "name": "In the Beginning (Cósmico)",
-    "desc": "Espaço sideral profundo, nebulosa estelar e constelações brilhantes.",
-    "img": "https://images.steamusercontent.com/ugc/2475370109689297967/EC9C53EA05064CE5C6634CA2626985105B496867/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
-    "badge": "🌌 TEMA IMERSIVO",
-    "accent": "#818cf8"
-  },
-  {
-    "id": "frosted_sapphire",
-    "name": "Frosted Sapphire Neon",
-    "desc": "Azul safira translúcido e efeito vidro fosco moderno para máxima imersão.",
-    "img": "",
-    "bg": "#062544",
-    "accent": "#38bdf8"
-  },
-  {
-    "id": "cyberpunk_neon",
-    "name": "Cyberpunk 2077 Neon",
-    "desc": "Estética gamer cyberpunk com vermelho neon, ciano elétrico e alto contraste.",
-    "img": "",
-    "bg": "#1c030d",
-    "accent": "#ff007f"
-  },
-  {
-    "id": "sunset_vaporwave",
-    "name": "Sunset Vaporwave",
-    "desc": "Pôr do sol synthwave com degradê roxo e acentos dourados brilhantes.",
-    "img": "",
-    "bg": "#20062b",
-    "accent": "#f59e0b"
-  },
-  {
-    "id": "midnight_amethyst",
-    "name": "Midnight Amethyst",
-    "desc": "Roxo ametista profundo e elegante com efeito fosco para uso noturno.",
-    "img": "",
-    "bg": "#150426",
-    "accent": "#a855f7"
-  },
-  {
-    "id": "amoled_black",
-    "name": "AMOLED Pure Black",
-    "desc": "Preto absoluto para telas OLED, descanso visual e zero reflexo.",
-    "img": "",
-    "bg": "#000000",
-    "accent": "#6366f1"
-  }
+﻿[
+    {
+        "id":  "dark_forest",
+        "name":  "The Dark Forest (MÃ­stico)",
+        "badge":  "ðŸŒŒ TEMA IMERSIVO",
+        "img":  "https://images.steamusercontent.com/ugc/12668128479810320595/1C9153D8D9466391E0EC0D0C9AFAC3A3A1E0E6D7/?imw=637\u0026imh=358\u0026ima=fit\u0026impolicy=Letterbox\u0026imcolor=%23000000\u0026letterbox=true",
+        "desc":  "Floresta escura mÃ­stica e atmosfera nÃ³rdica com alta imersÃ£o.",
+        "accent":  "#22c55e"
+    },
+    {
+        "id":  "in_the_beginning",
+        "name":  "In the Beginning (CÃ³smico)",
+        "badge":  "ðŸŒŒ TEMA IMERSIVO",
+        "img":  "https://images.steamusercontent.com/ugc/2475370109689297967/EC9C53EA05064CE5C6634CA2626985105B496867/?imw=637\u0026imh=358\u0026ima=fit\u0026impolicy=Letterbox\u0026imcolor=%23000000\u0026letterbox=true",
+        "desc":  "EspaÃ§o sideral profundo, nebulosa estelar e constelaÃ§Ãµes brilhantes.",
+        "accent":  "#818cf8"
+    },
+    {
+        "id":  "cyberpunk_fisherman",
+        "name":  "Cyberpunk City Rain",
+        "badge":  "ðŸŒŒ TEMA ANIMADO",
+        "img":  "https://images.steamusercontent.com/ugc/872999745267349037/E361D1BAC5A73F2FF81C6EA0FEED02291966443E/?imw=637\u0026imh=358\u0026ima=fit\u0026impolicy=Letterbox\u0026imcolor=%23000000\u0026letterbox=true",
+        "desc":  "Cidade cyberpunk futurista com chuva e reflexos neon vibrantes.",
+        "accent":  "#00f3ff"
+    },
+    {
+        "id":  "frieren_winter",
+        "name":  "Frieren (Winter Fishing)",
+        "badge":  "ðŸŒŒ TEMA ANIMADO",
+        "img":  "https://images.steamusercontent.com/ugc/2383056013909660890/348B0F647F52AABDB0573655DE8DA0B423154FAD/?imw=637\u0026imh=358\u0026ima=fit\u0026impolicy=Letterbox\u0026imcolor=%23000000\u0026letterbox=true",
+        "desc":  "Frieren em atmosfera de inverno nevado com lago congelado e calma visual.",
+        "accent":  "#38bdf8"
+    },
+    {
+        "id":  "gargantua_space",
+        "name":  "Gargantua Black Hole 4K",
+        "badge":  "ðŸŒŒ TEMA ANIMADO",
+        "img":  "https://images.steamusercontent.com/ugc/2052003902295001771/896D9C00B8E4447DA23C036FDAE81E4758CE685B/?imw=637\u0026imh=358\u0026ima=fit\u0026impolicy=Letterbox\u0026imcolor=%23000000\u0026letterbox=true",
+        "desc":  "Buraco negro Gargantua no espaÃ§o profundo com lente gravitacional hiper-realista.",
+        "accent":  "#f59e0b"
+    },
+    {
+        "id":  "klee_trip",
+        "name":  "Klee - Trip",
+        "badge":  "ðŸŒŒ TEMA ANIMADO",
+        "img":  "https://images.steamusercontent.com/ugc/1645465409578035834/BB6A8A91780FA52773AD14DAA7D44C879A2BD0EB/?imw=637\u0026imh=358\u0026ima=fit\u0026impolicy=Letterbox\u0026imcolor=%23000000\u0026letterbox=true",
+        "desc":  "Viagem colorida e vibrante em mundo de fantasia com estÃ©tica mÃ¡gica.",
+        "accent":  "#ef4444"
+    },
+    {
+        "id":  "pixel_cyberpunk",
+        "name":  "Pixel Cyberpunk City",
+        "badge":  "ðŸŒŒ TEMA ANIMADO",
+        "img":  "https://images.steamusercontent.com/ugc/950707391366700990/0AB9E707CBFE7247F569C091138243DD30690E33/?imw=637\u0026imh=358\u0026ima=fit\u0026impolicy=Letterbox\u0026imcolor=%23000000\u0026letterbox=true",
+        "desc":  "MetrÃ³pole cyberpunk em pixel art refinada com luzes noturnas e trÃ¡fego aÃ©reo.",
+        "accent":  "#a855f7"
+    },
+    {
+        "id":  "persica_anime",
+        "name":  "Persica",
+        "badge":  "ðŸŒŒ TEMA ANIMADO",
+        "img":  "https://images.steamusercontent.com/ugc/1688276024726618979/5C1A1F41C7F6BED69FA3B211938FA8D7B41751B0/?imw=637\u0026imh=358\u0026ima=fit\u0026impolicy=Letterbox\u0026imcolor=%23000000\u0026letterbox=true",
+        "desc":  "Persica em laboratÃ³rio de alta tecnologia com iluminaÃ§Ã£o suave e detalhes premium.",
+        "accent":  "#ec4899"
+    },
+    {
+        "id":  "frosted_sapphire",
+        "name":  "Frosted Sapphire Neon",
+        "bg":  "#062544",
+        "img":  "",
+        "desc":  "Azul safira translÃºcido e efeito vidro fosco moderno para mÃ¡xima imersÃ£o.",
+        "accent":  "#38bdf8"
+    },
+    {
+        "id":  "cyberpunk_neon",
+        "name":  "Cyberpunk 2077 Neon",
+        "bg":  "#1c030d",
+        "img":  "",
+        "desc":  "EstÃ©tica gamer cyberpunk com vermelho neon, ciano elÃ©trico e alto contraste.",
+        "accent":  "#ff007f"
+    },
+    {
+        "id":  "sunset_vaporwave",
+        "name":  "Sunset Vaporwave",
+        "bg":  "#20062b",
+        "img":  "",
+        "desc":  "PÃ´r do sol synthwave com degradÃª roxo e acentos dourados brilhantes.",
+        "accent":  "#f59e0b"
+    },
+    {
+        "id":  "midnight_amethyst",
+        "name":  "Midnight Amethyst",
+        "bg":  "#150426",
+        "img":  "",
+        "desc":  "Roxo ametista profundo e elegante com efeito fosco para uso noturno.",
+        "accent":  "#a855f7"
+    },
+    {
+        "id":  "amoled_black",
+        "name":  "AMOLED Pure Black",
+        "bg":  "#000000",
+        "img":  "",
+        "desc":  "Preto absoluto para telas OLED, descanso visual e zero reflexo.",
+        "accent":  "#6366f1"
+    }
 ]
