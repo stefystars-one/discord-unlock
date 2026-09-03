@@ -18,4 +18,4 @@ bugs da versao atual reportados: temas animados em baixa resolução/quebrados
 
 -ips off-line/lentos 
 
-data prevista para próxima atualização de correção de bugs 04/09/2026 as 14:00pm
+data prevista para próxima atualização de correção de bugs 04/09/2026 as 15:00pm
