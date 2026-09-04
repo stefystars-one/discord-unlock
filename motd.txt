@@ -1,3 +1,25 @@
+AVISO!
+
+Correções em andamento:
+compartilhamento de tela quebrado quebrado
+leg ao abrir dms/servidores/configs 
+
+
+Correções futuras:
+
+-mods de desbloqueio de funções nitro funcionais
+-envio de arquivo de ate 1gb
+-correção de temas
+-correção de áreas não afetadas por temas
+-ativação de funções inoperantes 
+
+Correções aplicadas
+-plugins 100% funcionais
+-loja de plugins atualizada
+-controle de plugins no discord unlock
+
+
+
 🚀 Como usar o programa
 
 Para usar o programa, basta aguardar o Discord abrir automaticamente. 💻
