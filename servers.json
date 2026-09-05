@@ -1,0 +1,35 @@
+[
+  {
+    "id": "server_01",
+    "name": "Miami, FL (EUA) - Servidor 01 (Ultra Rápido)",
+    "country": "Estados Unidos (Miami)",
+    "code": "US",
+    "endpoint": "84.20.27.53:51820",
+    "publicKey": "mkI+cC9ggzfMdZy1cl3Fl01gPJJxsLXjshXAN8EedQ8=",
+    "privateKey": "sLPBSsrhzoqZSOY/XxAzGAy5F+sQKQIIE3WoxG8buWM=",
+    "address": "10.2.0.2/32",
+    "dns": "1.1.1.1"
+  },
+  {
+    "id": "server_02",
+    "name": "Atlanta, GA (EUA) - Servidor 02 (Bypass)",
+    "country": "Estados Unidos (Atlanta)",
+    "code": "US",
+    "endpoint": "84.20.27.53:51820",
+    "publicKey": "mkI+cC9ggzfMdZy1cl3Fl01gPJJxsLXjshXAN8EedQ8=",
+    "privateKey": "sLPBSsrhzoqZSOY/XxAzGAy5F+sQKQIIE3WoxG8buWM=",
+    "address": "10.2.0.2/32",
+    "dns": "1.1.1.1"
+  },
+  {
+    "id": "server_03",
+    "name": "Cloudflare WARP - Servidor 03 (Anycast Global)",
+    "country": "Cloudflare WARP (Global)",
+    "code": "US",
+    "endpoint": "engage.cloudflareclient.com:2408",
+    "publicKey": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
+    "privateKey": "eNCL64ZM0DS6aYNYSEaveQ8GWeBX+4GF4Pk5enflTXA=",
+    "address": "172.16.0.2/32",
+    "dns": "1.1.1.1"
+  }
+]
