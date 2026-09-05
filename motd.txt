@@ -1,2 +1,42 @@
-Bem-vindo ao Discord Unlock 3.0 (Nova Geracao)!
-- Novidades: Suporte nativo ao WireGuard com tunelamento por processo, sincronizacao remota de servidores na nuvem, adicao de servidores proprios, auto-elevacao silenciosa via Task Scheduler e streaming 1440p 60 FPS!
+🚀 Discord Unlock — Atualização de Correção de Bugs
+
+🔧 v3.0 em desenvolvimento
+
+Estamos trabalhando continuamente para melhorar a estabilidade, desempenho e compatibilidade do Discord Unlock. Nesta atualização, diversas funções importantes foram corrigidas e aprimoradas.
+
+✅ Correções e melhorias
+
+- 📺 Transmissão de tela funcionando novamente
+- 🧩 Loja de plugins completamente remasterizada
+- 🌐 IPs mais estáveis
+- ➕ Possibilidade de adicionar um IP próprio
+- ⚙️ Novo sistema para transmissão de tela
+
+⚠️ Primeira execução
+
+Devido à substituição do sistema responsável pela transmissão de tela, o Discord Unlock poderá solicitar a execução em Modo Desenvolvedor na primeira abertura em sua máquina.
+
+Isso é normal e faz parte do novo funcionamento do aplicativo.
+
+Após a configuração inicial, o funcionamento do Discord Unlock permanece praticamente igual ao de antes.
+
+🔄 Importante: caso o Discord não seja reiniciado automaticamente ao abrir o Discord Unlock, feche completamente o Discord e o Discord Unlock e abra o aplicativo novamente. Isso evita possíveis conflitos e bugs durante a inicialização.
+
+Depois disso, você estará pronto para transmitir sua tela novamente. 🎥
+
+❌ O que ainda não está funcionando?
+
+Algumas funções continuam em desenvolvimento:
+
+- 🖥️ Mod QHD para usuários sem Nitro
+- 🖼️ Qualidade máxima em alguns wallpapers
+- 🔊 Soundboard
+- 😀 Envio de emojis de servidores sem Nitro
+- 📁 Envio de arquivos superiores a 1 GB
+
+Estamos trabalhando para tornar todas essas funções funcionais, estáveis e confiáveis, evitando soluções que possam causar novos problemas no aplicativo.
+
+🔜 Novas correções e melhorias serão disponibilizadas em breve.
+
+Obrigado pela paciência e pelo apoio.
+Aproveitem a v3.0! 🚀
