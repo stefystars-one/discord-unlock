@@ -1,9 +1,9 @@
 [
   {
     "id": "server_01",
-    "name": "Miami, FL (EUA) - Servidor 01 (Ultra Rápido)",
-    "country": "Estados Unidos (Miami)",
-    "code": "US",
+    "name": "México (Proton Ultra) - Servidor 01",
+    "country": "México (Cidade do México)",
+    "code": "MX",
     "endpoint": "84.20.27.53:51820",
     "publicKey": "mkI+cC9ggzfMdZy1cl3Fl01gPJJxsLXjshXAN8EedQ8=",
     "privateKey": "sLPBSsrhzoqZSOY/XxAzGAy5F+sQKQIIE3WoxG8buWM=",
