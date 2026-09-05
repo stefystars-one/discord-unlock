@@ -1,2 +1,5 @@
-Bem-vindo ao Discord Unlock 3.3!
-- Novidades v3.3: Executáveis 100% autônomos e portáteis para qualquer PC, driver WireSock NDIS embutido e auto-instalável, relatório de bugs com logs automáticos via webhook, isolamento estrito para o Discord sem interferir em navegadores e tutoriais completos de plugins.
+Bem-vindo ao Discord Unlock 3.4!
+- Novidades v3.4: Servidores WireGuard dedicados nos Estados Unidos (Miami e Atlanta) com 100% de desbloqueio do Go Live e compartilhamento de tela.
+- Modo Turbo Anônimo em 1 Clique (Gofile + WireGuard dedicado sem cadastro nem e-mail).
+- Formulário seguro com campos de E-mail, Senha e alternância de visibilidade para integração do seu servidor pessoal Proton.
+- Executáveis portáteis e autônomos com isolamento exclusivo para o Discord.
