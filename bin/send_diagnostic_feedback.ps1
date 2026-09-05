@@ -78,11 +78,17 @@ $curProxy = if (Test-Path $activeProxyFile) { (Get-Content $activeProxyFile -Raw
 $wiresockService = Get-Service "wiresock-client-service" -ErrorAction SilentlyContinue
 [void]$sb.AppendLine("Servico WireSock (WFP): " + $(if ($wiresockService) { $wiresockService.Status } else { "Nao Instalado" }))
 
-$wireSockConf = "C:\DiscordUnlock\bin\wiresock\wiresock-discord.conf"
-if (Test-Path $wireSockConf) {
-    [void]$sb.AppendLine("Configuracao WireSock Atual:")
-    $confLines = Get-Content $wireSockConf | Select-Object -First 25
-    foreach ($l in $confLines) { [void]$sb.AppendLine("  " + $l) }
+$wireSockConfCandidates = @(
+    (Join-Path $appData "DiscordUnlock\bin\wiresock\wiresock-discord.conf"),
+    "C:\DiscordUnlock\bin\wiresock\wiresock-discord.conf"
+)
+foreach ($cf in $wireSockConfCandidates) {
+    if (Test-Path $cf) {
+        [void]$sb.AppendLine("Configuracao WireSock Atual ($cf):")
+        $confLines = Get-Content $cf | Select-Object -First 25
+        foreach ($l in $confLines) { [void]$sb.AppendLine("  " + $l) }
+        break
+    }
 }
 
 try {
@@ -233,57 +239,68 @@ $sw.Stop()
 $reportContent = $sb.ToString()
 [System.IO.File]::WriteAllText($reportPath, $reportContent, [System.Text.Encoding]::UTF8)
 
-# ENVIAR AO DISCORD VIA MULTIPART/FORM-DATA
-Add-Type -AssemblyName System.Net.Http
-$client = [System.Net.Http.HttpClient]::new()
-$client.Timeout = [System.TimeSpan]::FromSeconds(25)
-
-$reportSizeKb = if (Test-Path $reportPath) { [math]::Round((Get-Item $reportPath).Length/1KB, 1) } else { 0 }
-
-$embedFields = @(
-    @{ name = "Tipo"; value = $Type; inline = $true },
-    @{ name = "Contato"; value = $(if ($Contact) { $Contact } else { "Nao informado" }); inline = $true },
-    @{ name = "Rota / Proxy"; value = $curProxy; inline = $true },
-    @{ name = "WireSock WFP"; value = $(if ($wiresockService) { $wiresockService.Status.ToString() } else { "N/A" }); inline = $true },
-    @{ name = "Discord PIDs"; value = $(if ($dcProcesses) { ($dcProcesses | Select-Object -First 4 -ExpandProperty Id) -join ', ' } else { "Fechado" }); inline = $true },
-    @{ name = "Arquivo Anexado"; value = "[ANEXO] DiscordUnlock_Diagnostics_Report.txt (" + $reportSizeKb + " KB)"; inline = $true }
-)
-
-$payloadObj = @{
-    embeds = @(
-        @{
-            title = $title
-            description = $Message
-            color = $color
-            fields = $embedFields
-            footer = @{
-                text = "ID: " + $Hwid + " | Chave: " + $LicenseKey + " | SO: " + [System.Environment]::OSVersion.VersionString
-            }
-        }
-    )
-}
-$payloadJson = $payloadObj | ConvertTo-Json -Depth 5
-
-$formData = [System.Net.Http.MultipartFormDataContent]::new()
-$stringContent = [System.Net.Http.StringContent]::new($payloadJson, [System.Text.Encoding]::UTF8, "application/json")
-$formData.Add($stringContent, "payload_json")
-
-if (Test-Path $reportPath) {
-    $fileBytes = [System.IO.File]::ReadAllBytes($reportPath)
-    $fileContent = [System.Net.Http.ByteArrayContent]::new($fileBytes)
-    $fileContent.Headers.ContentType = [System.Net.Http.Headers.MediaTypeHeaderValue]::Parse("text/plain; charset=utf-8")
-    $formData.Add($fileContent, "files[0]", "DiscordUnlock_Diagnostics_Report.txt")
-}
+# ENVIAR AO DISCORD VIA MULTIPART/FORM-DATA (CURL / HTTPCLIENT / RESTMETHOD)
+$tempPayloadFile = Join-Path $tempDir ("du_payload_" + [System.Guid]::NewGuid().ToString("N") + ".json")
+[System.IO.File]::WriteAllText($tempPayloadFile, $payloadJson, [System.Text.Encoding]::UTF8)
 
 $sent = $false
-try {
-    $res = $client.PostAsync($webhookUrl, $formData).Result
-    if ($res.IsSuccessStatusCode) {
-        $sent = $true
-    }
-} catch {}
 
-# Fallback se multipart falhar
+# Metodo 1: curl.exe nativo do Windows (sempre disponivel no Win10/11, 100% compativel com Discord)
+$curlCmd = Get-Command "curl.exe" -ErrorAction SilentlyContinue
+if ($curlCmd) {
+    try {
+        $curlArgs = @(
+            "-s", "-k", "-X", "POST",
+            "-F", "payload_json=<$tempPayloadFile;type=application/json"
+        )
+        if (Test-Path $reportPath) {
+            $curlArgs += "-F"
+            $curlArgs += "files[0]=@$reportPath;type=text/plain;filename=DiscordUnlock_Diagnostics_Report.txt"
+        }
+        $curlArgs += $webhookUrl
+
+        $proc = Start-Process -FilePath $curlCmd.Source -ArgumentList $curlArgs -NoNewWindow -Wait -PassThru -ErrorAction SilentlyContinue
+        if ($proc -and $proc.ExitCode -eq 0) {
+            $sent = $true
+        }
+    } catch {}
+}
+
+# Metodo 2: System.Net.Http.HttpClient com boundary limpo (sem aspas)
+if (-not $sent) {
+    try {
+        Add-Type -AssemblyName System.Net.Http -ErrorAction SilentlyContinue
+        $client = [System.Net.Http.HttpClient]::new()
+        $client.Timeout = [System.TimeSpan]::FromSeconds(25)
+        
+        $boundary = "---------------------------" + [System.DateTime]::Now.Ticks.ToString("x")
+        $formData = [System.Net.Http.MultipartFormDataContent]::new($boundary)
+        if ($formData.Headers.ContentType.Parameters) {
+            foreach ($p in $formData.Headers.ContentType.Parameters) {
+                if ($p.Name -eq 'boundary') {
+                    $p.Value = $boundary.Trim('"')
+                }
+            }
+        }
+        
+        $stringContent = [System.Net.Http.StringContent]::new($payloadJson, [System.Text.Encoding]::UTF8, "application/json")
+        $formData.Add($stringContent, "payload_json")
+
+        if (Test-Path $reportPath) {
+            $fileBytes = [System.IO.File]::ReadAllBytes($reportPath)
+            $fileContent = [System.Net.Http.ByteArrayContent]::new($fileBytes)
+            $fileContent.Headers.ContentType = [System.Net.Http.Headers.MediaTypeHeaderValue]::Parse("text/plain; charset=utf-8")
+            $formData.Add($fileContent, "files[0]", "DiscordUnlock_Diagnostics_Report.txt")
+        }
+
+        $res = $client.PostAsync($webhookUrl, $formData).Result
+        if ($res.IsSuccessStatusCode) {
+            $sent = $true
+        }
+    } catch {}
+}
+
+# Metodo 3: Fallback apenas JSON se todos os envios com anexo falharem
 if (-not $sent) {
     try {
         $h = @{ 'Content-Type' = 'application/json' }
@@ -293,6 +310,7 @@ if (-not $sent) {
     } catch {}
 }
 
+Remove-Item $tempPayloadFile -Force -ErrorAction SilentlyContinue
 Remove-Item $reportPath -Force -ErrorAction SilentlyContinue
 
 if ($sent) {
