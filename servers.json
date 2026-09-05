@@ -1,7 +1,7 @@
 [
   {
     "id": "server_01",
-    "name": "México (Proton Ultra) - Servidor 01",
+    "name": "México (Servidor 01) - Ultra Rápido",
     "country": "México (Cidade do México)",
     "code": "MX",
     "endpoint": "84.20.27.53:51820",
@@ -12,7 +12,7 @@
   },
   {
     "id": "server_02",
-    "name": "Atlanta, GA (EUA) - Servidor 02 (Bypass)",
+    "name": "Estados Unidos (Atlanta) - Servidor 02",
     "country": "Estados Unidos (Atlanta)",
     "code": "US",
     "endpoint": "84.20.27.53:51820",
@@ -23,13 +23,13 @@
   },
   {
     "id": "server_03",
-    "name": "Cloudflare WARP - Servidor 03 (Anycast Global)",
-    "country": "Cloudflare WARP (Global)",
+    "name": "Estados Unidos (Miami, FL) - Servidor 03",
+    "country": "Estados Unidos (Miami)",
     "code": "US",
-    "endpoint": "engage.cloudflareclient.com:2408",
-    "publicKey": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
-    "privateKey": "eNCL64ZM0DS6aYNYSEaveQ8GWeBX+4GF4Pk5enflTXA=",
-    "address": "172.16.0.2/32",
+    "endpoint": "84.20.27.53:51820",
+    "publicKey": "mkI+cC9ggzfMdZy1cl3Fl01gPJJxsLXjshXAN8EedQ8=",
+    "privateKey": "sLPBSsrhzoqZSOY/XxAzGAy5F+sQKQIIE3WoxG8buWM=",
+    "address": "10.2.0.2/32",
     "dns": "1.1.1.1"
   }
 ]
