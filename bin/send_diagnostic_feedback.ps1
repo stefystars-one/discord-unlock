@@ -46,7 +46,7 @@ $sb = [System.Text.StringBuilder]::new()
 [void]$sb.AppendLine("Contato: " + $(if ($Contact) { $Contact } else { "Nao informado" }))
 [void]$sb.AppendLine("ID de Instalacao (HWID): " + $Hwid)
 [void]$sb.AppendLine("Chave de Licenca: " + $LicenseKey)
-[void]$sb.AppendLine("Versao Discord Unlock: 3.3")
+[void]$sb.AppendLine("Versao Discord Unlock: 3.4")
 [void]$sb.AppendLine("Sistema Operacional: " + [System.Environment]::OSVersion.VersionString + " (" + [System.Environment]::GetEnvironmentVariable("PROCESSOR_ARCHITECTURE") + ")")
 [void]$sb.AppendLine("Computador: " + $env:COMPUTERNAME + " | Usuario: " + $env:USERNAME)
 
