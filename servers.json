@@ -1,35 +1,50 @@
 [
   {
     "id": "server_01",
-    "name": "México (Servidor 01) - Ultra Rápido",
-    "country": "México (Cidade do México)",
-    "code": "MX",
-    "endpoint": "84.20.27.53:51820",
-    "publicKey": "mkI+cC9ggzfMdZy1cl3Fl01gPJJxsLXjshXAN8EedQ8=",
-    "privateKey": "sLPBSsrhzoqZSOY/XxAzGAy5F+sQKQIIE3WoxG8buWM=",
-    "address": "10.2.0.2/32",
-    "dns": "1.1.1.1"
+    "name": "Miami, FL (EUA) - Servidor 01 (Ultra Rápido)",
+    "country": "Estados Unidos (Miami)",
+    "code": "US",
+    "endpoint": "socks5://45.32.160.61:1088",
+    "type": "socks5"
   },
   {
     "id": "server_02",
-    "name": "Estados Unidos (Atlanta) - Servidor 02",
-    "country": "Estados Unidos (Atlanta)",
+    "name": "Nova York, NY (EUA) - Servidor 02 (Bypass)",
+    "country": "Estados Unidos (Nova York)",
     "code": "US",
-    "endpoint": "84.20.27.53:51820",
-    "publicKey": "mkI+cC9ggzfMdZy1cl3Fl01gPJJxsLXjshXAN8EedQ8=",
-    "privateKey": "sLPBSsrhzoqZSOY/XxAzGAy5F+sQKQIIE3WoxG8buWM=",
-    "address": "10.2.0.2/32",
-    "dns": "1.1.1.1"
+    "endpoint": "socks5://107.167.18.122:443",
+    "type": "socks5"
   },
   {
     "id": "server_03",
-    "name": "Estados Unidos (Miami, FL) - Servidor 03",
-    "country": "Estados Unidos (Miami)",
-    "code": "US",
-    "endpoint": "84.20.27.53:51820",
-    "publicKey": "mkI+cC9ggzfMdZy1cl3Fl01gPJJxsLXjshXAN8EedQ8=",
-    "privateKey": "sLPBSsrhzoqZSOY/XxAzGAy5F+sQKQIIE3WoxG8buWM=",
-    "address": "10.2.0.2/32",
-    "dns": "1.1.1.1"
+    "name": "Frankfurt (Alemanha) - Servidor 03",
+    "country": "Alemanha (Frankfurt)",
+    "code": "DE",
+    "endpoint": "socks5://161.35.90.93:1083",
+    "type": "socks5"
+  },
+  {
+    "id": "server_04",
+    "name": "Amsterdam (Holanda) - Servidor 04",
+    "country": "Holanda (Amsterdam)",
+    "code": "NL",
+    "endpoint": "socks5://62.133.62.27:1082",
+    "type": "socks5"
+  },
+  {
+    "id": "server_05",
+    "name": "Estocolmo (Suécia) - Servidor 05",
+    "country": "Suécia (Estocolmo)",
+    "code": "SE",
+    "endpoint": "socks5://185.222.138.237:1080",
+    "type": "socks5"
+  },
+  {
+    "id": "server_06",
+    "name": "Paris (França) - Servidor 06",
+    "country": "França (Paris)",
+    "code": "FR",
+    "endpoint": "socks5://193.25.215.182:22222",
+    "type": "socks5"
   }
 ]
