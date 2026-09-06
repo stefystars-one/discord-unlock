@@ -1,2 +1,2 @@
-Bem-vindo ao Discord Unlock 4.0!
-- Novidades: Nova Galeria Full Immersion com 24 Wallpapers animados HD do Google Drive, botao de Restaurar Padrao 100% nativo com recarregamento em tempo real no Discord, auto-provisionamento de dependencias e maxima estabilidade!
+Bem-vindo ao Discord Unlock 4.1!
+- Novidades: Galeria de Temas 100% incorporada no binario standalone (funciona em qualquer PC sem depender de arquivos locais), UAC com solicitacao de Administrador nativa na abertura, correcao de transmissao de tela Go Live e restauracao de tema em tempo real!
