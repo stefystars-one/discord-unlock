@@ -1,50 +1,16 @@
-[
+﻿[
   {
-    "id": "server_01",
-    "name": "Miami, FL (EUA) - Servidor 01 (Ultra Rápido)",
-    "country": "Estados Unidos (Miami)",
-    "code": "US",
-    "endpoint": "socks5://45.32.160.61:1088",
-    "type": "socks5"
+    "id": "proton_optimized",
+    "name": "⚡ Proton Otimizado (WireGuard)",
+    "country": "Automático (Menor Latência)",
+    "code": "AUTO",
+    "endpoint": "wireguard://proton"
   },
   {
-    "id": "server_02",
-    "name": "Nova York, NY (EUA) - Servidor 02 (Bypass)",
-    "country": "Estados Unidos (Nova York)",
-    "code": "US",
-    "endpoint": "socks5://107.167.18.122:443",
-    "type": "socks5"
-  },
-  {
-    "id": "server_03",
-    "name": "Frankfurt (Alemanha) - Servidor 03",
-    "country": "Alemanha (Frankfurt)",
-    "code": "DE",
-    "endpoint": "socks5://161.35.90.93:1083",
-    "type": "socks5"
-  },
-  {
-    "id": "server_04",
-    "name": "Amsterdam (Holanda) - Servidor 04",
-    "country": "Holanda (Amsterdam)",
-    "code": "NL",
-    "endpoint": "socks5://62.133.62.27:1082",
-    "type": "socks5"
-  },
-  {
-    "id": "server_05",
-    "name": "Estocolmo (Suécia) - Servidor 05",
-    "country": "Suécia (Estocolmo)",
-    "code": "SE",
-    "endpoint": "socks5://185.222.138.237:1080",
-    "type": "socks5"
-  },
-  {
-    "id": "server_06",
-    "name": "Paris (França) - Servidor 06",
-    "country": "França (Paris)",
-    "code": "FR",
-    "endpoint": "socks5://193.25.215.182:22222",
-    "type": "socks5"
+    "id": "custom_conf",
+    "name": "📄 Arquivo .conf Customizado (WireGuard)",
+    "country": "Customizado",
+    "code": "CUSTOM",
+    "endpoint": "wireguard://custom"
   }
 ]
