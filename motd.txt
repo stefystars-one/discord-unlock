@@ -1,3 +1,2 @@
-﻿Bem-vindo ao Discord Unlock 3.5!
-- Motor GoLiveBypass WireGuard integrado: transmissao de tela em 60 FPS e camera liberadas no Discord com latencia ultrabaixa.
-- Rotas isoladas: apenas o Discord passa pelo tunel seguro WireGuard.
+Bem-vindo ao Discord Unlock 4.0!
+- Novidades: Nova Galeria Full Immersion com 24 Wallpapers animados HD do Google Drive, botao de Restaurar Padrao 100% nativo com recarregamento em tempo real no Discord, auto-provisionamento de dependencias e maxima estabilidade!
