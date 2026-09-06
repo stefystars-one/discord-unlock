@@ -1,5 +1,3 @@
-Bem-vindo ao Discord Unlock 3.4!
-- Novidades v3.4: Servidores WireGuard dedicados nos Estados Unidos (Miami e Atlanta) com 100% de desbloqueio do Go Live e compartilhamento de tela.
-- Modo Turbo Anônimo em 1 Clique (Gofile + WireGuard dedicado sem cadastro nem e-mail).
-- Formulário seguro com campos de E-mail, Senha e alternância de visibilidade para integração do seu servidor pessoal Proton.
-- Executáveis portáteis e autônomos com isolamento exclusivo para o Discord.
+﻿Bem-vindo ao Discord Unlock 3.5!
+- Motor GoLiveBypass WireGuard integrado: transmissao de tela em 60 FPS e camera liberadas no Discord com latencia ultrabaixa.
+- Rotas isoladas: apenas o Discord passa pelo tunel seguro WireGuard.
