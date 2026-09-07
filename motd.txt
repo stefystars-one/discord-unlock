@@ -1,5 +1,2 @@
 Bem-vindo ao Discord Unlock 4.1!
-
-crie ou conect sua conta proton pra usar
-
-           (não somos vpn!)
+- Novidades: Galeria de Temas 100% incorporada no binario standalone (funciona em qualquer PC sem depender de arquivos locais), UAC com solicitacao de Administrador nativa na abertura, correcao de transmissao de tela Go Live e restauracao de tema em tempo real!
