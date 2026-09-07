@@ -1,2 +1,42 @@
-Bem-vindo ao Discord Unlock 4.1!
-- Novidades: Galeria de Temas 100% incorporada no binario standalone (funciona em qualquer PC sem depender de arquivos locais), UAC com solicitacao de Administrador nativa na abertura, correcao de transmissao de tela Go Live e restauracao de tema em tempo real!
+Discord Unlock — Rev. 4.1
+
+🔧 Correções e melhorias
+
+Nesta nova versão, estamos trabalhando na correção e melhoria dos seguintes recursos:
+
+- 📺 Transmissão de tela
+- 🎨 Loja de temas
+- 🔌 Loja de plugins
+- 🐛 Sistema de report de bugs
+
+🔐 Como utilizar a nova versão
+
+Para utilizar a nova versão, basta fazer login com uma conta Proton.
+
+Caso ainda não possua uma conta, você poderá criar uma facilmente através do atalho disponível logo abaixo do campo de login.
+
+Após a criação e o login, o bypass será ativado automaticamente e você receberá acesso a um servidor Proton nos EUA ou em outra localização disponível, caso prefira.
+
+Se a conexão começar a apresentar lentidão ou aumento de latência após algumas horas de uso, basta utilizar o botão “Otimizar Rota”.
+
+«Não é necessário reiniciar o Discord após realizar a otimização.»
+
+🎨 Loja de temas
+
+Já estamos cientes de que o Unlock pode aplicar temas indesejados após a abertura do Discord. Nossa equipe já está trabalhando na correção desse problema.
+
+Enquanto isso, a Loja de Temas foi atualizada e já conta com novos conteúdos.
+
+Alguns temas antigos foram removidos temporariamente devido a problemas de incompatibilidade. Não se preocupe: alguns deles retornarão em breve, juntamente com uma lista de temas muito maior e mais compatível.
+
+🐛 Encontrou um bug?
+
+Caso encontre algum problema, bug ou tenha uma sugestão de melhoria, utilize o próprio sistema de report do Discord Unlock para nos enviar seu feedback.
+
+Isso nos ajuda a identificar e corrigir problemas com mais rapidez.
+
+---
+
+Obrigado por escolher o Discord Unlock!
+
+— Stefy Stars
